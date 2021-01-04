@@ -41,6 +41,16 @@
 
         methods: {
             handleChange(event) {
+                if(!event) {
+                    this.$store.commit(`${this.resourceName}/updateFilterState`, {
+                        filterClass: this.filterKey,
+                        value: '',
+                    })
+                    this.$store.dispatch(`${this.resourceName}/resetFilterState`)
+
+                    this.$emit('change')
+                    return
+                }
 
                 this.$store.commit(`${this.resourceName}/updateFilterState`, {
                     filterClass: this.filterKey,

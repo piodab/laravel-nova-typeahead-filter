@@ -41,8 +41,3 @@
   display: block;
   width: 100%;
 }
-
-.scroll-wrap {
-  &.overflow-x-hidden { overflow: unset !important; }
-  &.overflow-y-auto { overflow: unset !important; }
-}
