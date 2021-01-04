@@ -1,5 +1,5 @@
 {
-    "name": "devpartners/typeahead-filter",
+    "name": "idealfactory/typeahead-filter",
     "description": "A Laravel Nova select filter with typeahead.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Devpartners\\TypeaheadFilter\\": "src/"
+            "IdealFactory\\TypeaheadFilter\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Devpartners\\TypeaheadFilter\\FilterServiceProvider"
+                "IdealFactory\\TypeaheadFilter\\FilterServiceProvider"
             ]
         }
     },
